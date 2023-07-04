@@ -26,31 +26,30 @@ namespace i2.Framework.Domain.Model
     /// Abstract public class to represent the business entities.
     /// </summary>
     /// <remarks>
-    /// La clase abstracta <see cref="IEntity{TIdentifier}"/> representa una clase base de tipo
-    /// entidad de negocio.
+    /// The abstract class <see cref="IEntity{TIdentifier}"/> represents a base class for the business entity type.
     /// </remarks>
     /// <typeparam name="TEntity">
-    /// Tipo genérico para representar el propio tipo del identificador.
-    /// su inclusión se justifica para facilitar las operaciones de reflexión, 
-    /// concretamente para facilitar la construción del metodo CanDelete del AgregateRoot.
+    /// Generic type parameter to represent the actual type of the identifier.
+    /// Its inclusion is justified to facilitate reflection operations,
+    /// specifically to facilitate the construction of the CanDelete method in the AggregateRoot.
     /// </typeparam>
     /// <typeparam name="TIdentifier">
-    /// Tipo genérico para representar el tipo de identificador de las
-    /// entidades y que es necesario para los repositorios.
+    /// Generic type parameter to represent the type of identifier for the entities,
+    /// which is necessary for the repositories.
     /// </typeparam>
     /// <seealso cref="T:Inflexion2.Domain.IEntity{TIdentifier}" />
     [Serializable]
     public abstract class Entity<TEntity, TIdentifier> : IEntity<TIdentifier>
         where TEntity : IEntity<TIdentifier>, IEquatable<TEntity>, IComparable<TEntity>
-        where TIdentifier :  System.IEquatable<TIdentifier>, System.IComparable<TIdentifier>
+        where TIdentifier : System.IEquatable<TIdentifier>, System.IComparable<TIdentifier>
     {
         #region Constants
 
         /// <summary>
         ///     To help ensure hashcode uniqueness, a carefully selected random number multiplier 
         ///     is used within the calculation.  Goodrich and Tamassia's Data Structures and
-        ///     Algorithms in Java asserts that 31, 33, 37, 39 and 41 will produce the fewest number
-        ///     of collissions.  See http://computinglife.wordpress.com/2008/11/20/why-do-hash-functions-use-prime-numbers/
+        ///     Algorithms in Java asserts that 31, 33, 37, 39, and 41 will produce the fewest number
+        ///     of collisions.  See http://computinglife.wordpress.com/2008/11/20/why-do-hash-functions-use-prime-numbers/
         ///     for more information.
         /// </summary>
         static private readonly int HASH_MULTIPLIER = 31;
@@ -60,16 +59,15 @@ namespace i2.Framework.Domain.Model
         #region Fields
 
         /// <summary>
-        /// Identificador único de la entidad.
+        /// Unique identifier of the entity.
         /// </summary>
         /// <remarks>
-        /// Este campo o variable se utiliza conjuntamente con la propiedad
+        /// This field or variable is used in conjunction with the property
         /// <see cref="Id"/>.
         /// </remarks>
         private TIdentifier id;
 
         /// <summary>
-        /// Derived from Hexacore
         /// 
         /// </summary>
         private int? cachedHashcode;
@@ -89,20 +87,20 @@ namespace i2.Framework.Domain.Model
         #region Properties
 
         /// <summary>
-        /// Devuelve el identificador único de la entidad.
+        /// Gets or sets the unique identifier of the entity.
         /// </summary>
         /// <value>
-        /// Identificador único de la entidad.
+        /// The unique identifier of the entity.
         /// </value>
         /// <remarks>
         /// <para>
-        /// El valor del identificador único será utilizado como
-        /// criterio principal durante la igualdad y comparación entre
-        /// entidades.
+        /// The value of the unique identifier will be used as
+        /// the primary criterion for equality and comparison between
+        /// entities.
         /// </para>
         /// <para>
-        /// TIdentifier Representa el tipo de datos del identificador único
-        /// de la entidad.
+        /// TIdentifier represents the data type of the unique identifier
+        /// of the entity.
         /// </para>
         /// </remarks>
         public virtual TIdentifier Id
@@ -118,16 +116,16 @@ namespace i2.Framework.Domain.Model
         }
 
         /// <summary>
-        /// Devuelve el tipo actual de la entidad, con independencia
-        /// del nivel en el que nos encontremos en la jerarquía de clases.
+        /// Gets the actual type of the entity, regardless of the level
+        /// in the class hierarchy.
         /// </summary>
         /// <remarks>
-        /// El tipo real será utilizado como criterio principal
-        /// durante la igualdad y comparación entre entidades.
+        /// The actual type will be used as the primary criterion
+        /// for equality and comparison between entities.
         /// </remarks>
         /// <value>
-        /// El tipo real (tipo <see cref="T:System.Type"/> hoja) de la
-        /// entidad.
+        /// The actual type (leaf type <see cref="T:System.Type"/>) of the
+        /// entity.
         /// </value>
         public virtual System.Type ActualType
         {
@@ -142,14 +140,14 @@ namespace i2.Framework.Domain.Model
         #region Constructors
 
         /// <summary>
-        /// Constructor de la clase.
+        /// Constructor of the class.
         /// </summary>
         /// <remarks>
-        /// El constructor nos permite crear una entidad de acuerdo al
-        /// identificador único.
+        /// The constructor allows us to create an entity based on
+        /// the unique identifier.
         /// </remarks>
         /// <param name="id">
-        /// Identificador unívoco de la entidad.
+        /// The unique identifier of the entity.
         /// </param>
         protected Entity(TIdentifier id)//:base()
         {
@@ -157,11 +155,11 @@ namespace i2.Framework.Domain.Model
         }
 
         /// <summary>
-        /// Constructor vacio de la clase.
+        /// Empty constructor of the class.
         /// </summary>
         /// <remarks>
-        /// El constructor nos permite crear una entidad de acuerdo al
-        /// identificador único.
+        /// The constructor allows us to create an entity based on
+        /// the unique identifier.
         /// </remarks>
         protected Entity()
         {
@@ -170,37 +168,37 @@ namespace i2.Framework.Domain.Model
 
         #endregion Constructors
 
-        #region methods
+        #region Methods
 
         /// <summary>
-        /// Define la función encargada de comparar u ordenar objetos.
+        /// Defines the function responsible for comparing or ordering objects.
         /// </summary>
         /// <remarks>
-        /// Compara el identificador único de dos entidades para saber si
-        /// son iguales o no.
+        /// Compares the unique identifier of two entities to determine if
+        /// they are equal or not.
         /// </remarks>
         /// <param name="element">
-        /// Parámetro que hace referencia al elemento a comparar.
+        /// The parameter that refers to the element to compare.
         /// </param>
         /// <exception cref="System.ArgumentNullException">
-        /// Lanzada cuando el valor del argumento <c>element</c> es null.
+        /// Thrown when the value of the argument <c>element</c> is null.
         /// </exception>
         /// <exception cref="System.ArgumentException">
-        /// Lanzada cuando el valor de la variable <c>otherEntity</c> es null.
+        /// Thrown when the value of the variable <c>otherEntity</c> is null.
         /// </exception>
         /// <returns>
-        /// Devuelve un entero que indica si la comparación es correcta o no.
+        /// Returns an integer indicating whether the comparison is correct or not.
         /// </returns>
         public virtual int CompareTo(object element)
         {
-            // Comprobamos que el elemento no es nulo.
+            // Check that the element is not null.
             if (element == null)
             {
                 throw new System.ArgumentNullException("element");
             }
             else
             {
-                // Realizamos el cast del argumento.
+                // Cast the argument.
                 var otherEntity = element as IEntity<TIdentifier>;
                 if (otherEntity == null)
                 {
@@ -214,20 +212,20 @@ namespace i2.Framework.Domain.Model
         }
 
         /// <summary>
-        /// Define la función encargada de comparar u ordenar objetos.
+        /// Defines the function responsible for comparing or ordering objects.
         /// </summary>
         /// <remarks>
-        /// Compara el identificador único de dos entidades para saber si
-        /// son iguales o no.
+        /// Compares the unique identifier of two entities to determine if
+        /// they are equal or not.
         /// </remarks>
         /// <param name="entityIdentifier">
-        /// Parámetro que hace referencia al identificador a comparar.
+        /// The parameter that refers to the identifier to compare.
         /// </param>
         /// <exception cref="System.ArgumentNullException">
-        /// Lanzada cuando el valor del argumento <c>entityIdentifier</c> es null.
+        /// Thrown when the value of the argument <c>entityIdentifier</c> is null.
         /// </exception>
         /// <returns>
-        /// Devuelve un entero que indica si la comparación es correcta o no.
+        /// Returns an integer indicating whether the comparison is correct or not.
         /// </returns>
         public virtual int CompareTo(IEntity<TIdentifier> entityIdentifier)
         {
@@ -237,35 +235,34 @@ namespace i2.Framework.Domain.Model
             }
             else
             {
-                // Use the id property like a criteria for default sorting
-                // Utilizamos el identificador único como criterio principal de ordenación.
+                // Use the id property as the primary sorting criterion.
                 return this.Id.CompareTo(entityIdentifier.Id);
             }
         }
 
         /// <summary>
-        /// Define la función encargada de comparar u ordenar objetos.
+        /// Defines the function responsible for comparing or ordering objects.
         /// </summary>
         /// <remarks>
-        /// Compara el identificador de dos entidades base para saber si
-        /// son iguales o no.
+        /// Compares the identifier of two base entities to determine if
+        /// they are equal or not.
         /// </remarks>
-        /// <param name="entityIdentifier">Indica el otro objeto con el cual comparar.</param>
-        /// <returns>Devuelve un entero que indica si la comparación es correcta o no.</returns>
+        /// <param name="entityIdentifier">Indicates the other object to compare with.</param>
+        /// <returns>Returns an integer indicating whether the comparison is correct or not.</returns>
         public virtual int CompareTo(Entity<TEntity, TIdentifier> entityIdentifier)
         {
             return this.CompareTo(entityIdentifier as IEntity<TIdentifier>);
         }
 
         /// <summary>
-        /// Define la función encargada de comparar u ordenar objetos.
+        /// Defines the function responsible for comparing or ordering objects.
         /// </summary>
         /// <remarks>
-        /// Compara el identificador de dos entidades base para saber si
-        /// son iguales o no.
+        /// Compares the identifier of two base entities to determine if
+        /// they are equal or not.
         /// </remarks>
-        /// <param name="entity">Indica el otro objeto con el cual comparar.</param>
-        /// <returns>Devuelve un entero que indica si la comparación es correcta o no.</returns>
+        /// <param name="entity">Indicates the other object to compare with.</param>
+        /// <returns>Returns an integer indicating whether the comparison is correct or not.</returns>
         public virtual int CompareTo(TEntity entity)
         {
             return this.CompareTo(entity as IEntity<TIdentifier>);
@@ -278,11 +275,11 @@ namespace i2.Framework.Domain.Model
         /// </summary>
         public virtual bool IsTransient()
         {
-            if (this.id==null && default(TIdentifier) == null)
-            { 
-                return true; 
+            if (this.id == null && default(TIdentifier) == null)
+            {
+                return true;
             }
-            return this.id.Equals(default(TIdentifier)); 
+            return this.id.Equals(default(TIdentifier));
         }
 
         /// <summary>
@@ -314,6 +311,7 @@ namespace i2.Framework.Domain.Model
         {
             return base.Equals(other);
         }
+
         /// <summary>
         /// Determines whether the specified <see cref="T:System.Object"/> is equal to the current <see cref="T:System.Object"/>.
         /// </summary>
@@ -362,7 +360,7 @@ namespace i2.Framework.Domain.Model
         /// <returns></returns>
         public override int GetHashCode()
         {
-            // Once we have a hash code we'll never change it
+            // Once we have a hash code, we'll never change it
             if (this.cachedHashcode.HasValue)
             {
                 return this.cachedHashcode.Value;
@@ -376,25 +374,25 @@ namespace i2.Framework.Domain.Model
             {
                 unchecked
                 {
-                    //var signatureProperties = this.GetSignatureProperties();  // opcion 2 from SharpArchitecure                  
+                    //var signatureProperties = this.GetSignatureProperties();  // Option 2 from SharpArchitecture                  
 
                     // It's possible for two objects to return the same hash code based on
                     // identically valued properties, even if they're of two different types,
                     // so we include the object's type in the hash calculation
                     int hashCode = this.GetType().GetHashCode();
 
-                    // opcion 1 from hexacore selected
+                    // Option 1 
                     this.cachedHashcode = (hashCode * HASH_MULTIPLIER) ^ this.Id.GetHashCode();
-                    // opcion 2 from SharpArchitecure
+                    // Option 2 from SharpArchitecture
 
                     //this.cachedHashcode = signatureProperties.Select(property => property.GetValue(this, null))
                     //                          .Where(value => value != null)
                     //                          .Aggregate(hashCode, (current, value) => (current * HASH_MULTIPLIER) ^ value.GetHashCode());
 
-                //if (signatureProperties.Any())
-                //{
-                //    return hashCode;
-                //}
+                    //if (signatureProperties.Any())
+                    //{
+                    //    return hashCode;
+                    //}
 
                 }
             }
@@ -409,7 +407,6 @@ namespace i2.Framework.Domain.Model
         public virtual IEnumerable<PropertyInfo> GetSignatureProperties()
         {
             IEnumerable<PropertyInfo> properties;
-
 
             if (signaturePropertiesDictionary == null)
             {
@@ -441,7 +438,6 @@ namespace i2.Framework.Domain.Model
         }
 
         /// <summary>
-        /// derived from Hexacore
         /// Returns true if self and the provided entity have the same Id values
         /// and the Ids are not of the default Id value
         /// </summary>
@@ -475,3 +471,4 @@ namespace i2.Framework.Domain.Model
         #endregion
     }
 }
+
