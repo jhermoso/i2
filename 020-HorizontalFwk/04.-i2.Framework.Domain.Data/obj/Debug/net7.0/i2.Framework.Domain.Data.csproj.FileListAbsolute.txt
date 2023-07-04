@@ -1,0 +1,16 @@
+D:\git\i2\020-HorizontalFwk\04.-i2.Framework.Domain.Data\bin\Debug\net7.0\i2.Framework.Domain.Data.deps.json
+D:\git\i2\020-HorizontalFwk\04.-i2.Framework.Domain.Data\bin\Debug\net7.0\i2.Framework.Domain.Data.dll
+D:\git\i2\020-HorizontalFwk\04.-i2.Framework.Domain.Data\bin\Debug\net7.0\i2.Framework.Domain.Data.pdb
+D:\git\i2\020-HorizontalFwk\04.-i2.Framework.Domain.Data\obj\Debug\net7.0\i2.Framework.Domain.Data.csproj.AssemblyReference.cache
+D:\git\i2\020-HorizontalFwk\04.-i2.Framework.Domain.Data\obj\Debug\net7.0\i2.Framework.Domain.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\git\i2\020-HorizontalFwk\04.-i2.Framework.Domain.Data\obj\Debug\net7.0\i2.Framework.Domain.Data.AssemblyInfoInputs.cache
+D:\git\i2\020-HorizontalFwk\04.-i2.Framework.Domain.Data\obj\Debug\net7.0\i2.Framework.Domain.Data.AssemblyInfo.cs
+D:\git\i2\020-HorizontalFwk\04.-i2.Framework.Domain.Data\obj\Debug\net7.0\i2.Framework.Domain.Data.csproj.CoreCompileInputs.cache
+D:\git\i2\020-HorizontalFwk\04.-i2.Framework.Domain.Data\obj\Debug\net7.0\i2.Framework.Domain.Data.dll
+D:\git\i2\020-HorizontalFwk\04.-i2.Framework.Domain.Data\obj\Debug\net7.0\refint\i2.Framework.Domain.Data.dll
+D:\git\i2\020-HorizontalFwk\04.-i2.Framework.Domain.Data\obj\Debug\net7.0\i2.Framework.Domain.Data.pdb
+D:\git\i2\020-HorizontalFwk\04.-i2.Framework.Domain.Data\obj\Debug\net7.0\ref\i2.Framework.Domain.Data.dll
+D:\git\i2\000-Assemblies\Debug\net7.0\i2.Framework.Domain.Data.deps.json
+D:\git\i2\000-Assemblies\Debug\net7.0\i2.Framework.Domain.Data.dll
+D:\git\i2\000-Assemblies\Debug\net7.0\i2.Framework.Domain.Data.pdb
+D:\git\i2\000-Assemblies\Debug\net7.0\Inflexion2.XML

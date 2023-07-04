@@ -1,0 +1,16 @@
+D:\git\i2\020-HorizontalFwk\05.-i2.Framework.Infrastructure.Contracts\bin\Debug\net7.0\i2.Framework.Infrastructure.Contracts.deps.json
+D:\git\i2\020-HorizontalFwk\05.-i2.Framework.Infrastructure.Contracts\bin\Debug\net7.0\i2.Framework.Infrastructure.Contracts.dll
+D:\git\i2\020-HorizontalFwk\05.-i2.Framework.Infrastructure.Contracts\bin\Debug\net7.0\i2.Framework.Infrastructure.Contracts.pdb
+D:\git\i2\020-HorizontalFwk\05.-i2.Framework.Infrastructure.Contracts\obj\Debug\net7.0\i2.Framework.Infrastructure.Contracts.csproj.AssemblyReference.cache
+D:\git\i2\020-HorizontalFwk\05.-i2.Framework.Infrastructure.Contracts\obj\Debug\net7.0\i2.Framework.Infrastructure.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\git\i2\020-HorizontalFwk\05.-i2.Framework.Infrastructure.Contracts\obj\Debug\net7.0\i2.Framework.Infrastructure.Contracts.AssemblyInfoInputs.cache
+D:\git\i2\020-HorizontalFwk\05.-i2.Framework.Infrastructure.Contracts\obj\Debug\net7.0\i2.Framework.Infrastructure.Contracts.AssemblyInfo.cs
+D:\git\i2\020-HorizontalFwk\05.-i2.Framework.Infrastructure.Contracts\obj\Debug\net7.0\i2.Framework.Infrastructure.Contracts.csproj.CoreCompileInputs.cache
+D:\git\i2\020-HorizontalFwk\05.-i2.Framework.Infrastructure.Contracts\obj\Debug\net7.0\i2.Framework.Infrastructure.Contracts.dll
+D:\git\i2\020-HorizontalFwk\05.-i2.Framework.Infrastructure.Contracts\obj\Debug\net7.0\refint\i2.Framework.Infrastructure.Contracts.dll
+D:\git\i2\020-HorizontalFwk\05.-i2.Framework.Infrastructure.Contracts\obj\Debug\net7.0\i2.Framework.Infrastructure.Contracts.pdb
+D:\git\i2\020-HorizontalFwk\05.-i2.Framework.Infrastructure.Contracts\obj\Debug\net7.0\ref\i2.Framework.Infrastructure.Contracts.dll
+D:\git\i2\000-Assemblies\Debug\net7.0\i2.Framework.Infrastructure.Contracts.deps.json
+D:\git\i2\000-Assemblies\Debug\net7.0\i2.Framework.Infrastructure.Contracts.dll
+D:\git\i2\000-Assemblies\Debug\net7.0\i2.Framework.Infrastructure.Contracts.pdb
+D:\git\i2\000-Assemblies\Debug\net7.0\Inflexion2.XML

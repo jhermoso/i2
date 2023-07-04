@@ -1,0 +1,160 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "i2.Framework.Distribution.Client.Soap/1.0.0": {
+        "dependencies": {
+          "i2.Framework.Distribution.Contracts": "1.0.0",
+          "i2.Framework.Distribution.Facade.Soap": "1.0.0"
+        },
+        "runtime": {
+          "i2.Framework.Distribution.Client.Soap.dll": {}
+        }
+      },
+      "i2.Framework.Application.Contracts/1.0.0": {
+        "dependencies": {
+          "i2.Framework.Domain.Contracts": "1.0.0",
+          "i2.Framework.Infrastructure.Contracts": "1.0.0",
+          "i2.Framework.Infrastructure.Resources": "1.0.0"
+        },
+        "runtime": {
+          "i2.Framework.Application.Contracts.dll": {}
+        }
+      },
+      "i2.Framework.Application.Dtos/1.0.0": {
+        "runtime": {
+          "i2.Framework.Application.Dtos.dll": {}
+        }
+      },
+      "i2.Framework.Application.Wrapper/1.0.0": {
+        "dependencies": {
+          "i2.Framework.Application.Contracts": "1.0.0",
+          "i2.Framework.Application.Dtos": "1.0.0",
+          "i2.Framework.Domain.Contracts": "1.0.0",
+          "i2.Framework.Domain.Data": "1.0.0",
+          "i2.Framework.Domain.Model": "1.0.0",
+          "i2.Framework.Infrastructure.Contracts": "1.0.0",
+          "i2.Framework.Infrastructure.Resources": "1.0.0"
+        },
+        "runtime": {
+          "i2.Framework.Application.Wrapper.dll": {}
+        }
+      },
+      "i2.Framework.Distribution.Contracts/1.0.0": {
+        "dependencies": {
+          "i2.Framework.Application.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "i2.Framework.Distribution.Contracts.dll": {}
+        }
+      },
+      "i2.Framework.Distribution.Facade.Soap/1.0.0": {
+        "dependencies": {
+          "i2.Framework.Application.Contracts": "1.0.0",
+          "i2.Framework.Application.Dtos": "1.0.0",
+          "i2.Framework.Application.Wrapper": "1.0.0",
+          "i2.Framework.Distribution.Contracts": "1.0.0",
+          "i2.Framework.Infrastructure.Resources": "1.0.0"
+        },
+        "runtime": {
+          "i2.Framework.Distribution.Facade.Soap.dll": {}
+        }
+      },
+      "i2.Framework.Domain.Contracts/1.0.0": {
+        "dependencies": {
+          "i2.Framework.Infrastructure.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "i2.Framework.Domain.Contracts.dll": {}
+        }
+      },
+      "i2.Framework.Domain.Data/1.0.0": {
+        "runtime": {
+          "i2.Framework.Domain.Data.dll": {}
+        }
+      },
+      "i2.Framework.Domain.Model/1.0.0": {
+        "dependencies": {
+          "i2.Framework.Domain.Contracts": "1.0.0",
+          "i2.Framework.Domain.Data": "1.0.0",
+          "i2.Framework.Infrastructure.Contracts": "1.0.0",
+          "i2.Framework.Infrastructure.Resources": "1.0.0"
+        },
+        "runtime": {
+          "i2.Framework.Domain.Model.dll": {}
+        }
+      },
+      "i2.Framework.Infrastructure.Contracts/1.0.0": {
+        "runtime": {
+          "i2.Framework.Infrastructure.Contracts.dll": {}
+        }
+      },
+      "i2.Framework.Infrastructure.Resources/1.0.0": {
+        "runtime": {
+          "i2.Framework.Infrastructure.Resources.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "i2.Framework.Distribution.Client.Soap/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "i2.Framework.Application.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "i2.Framework.Application.Dtos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "i2.Framework.Application.Wrapper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "i2.Framework.Distribution.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "i2.Framework.Distribution.Facade.Soap/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "i2.Framework.Domain.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "i2.Framework.Domain.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "i2.Framework.Domain.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "i2.Framework.Infrastructure.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "i2.Framework.Infrastructure.Resources/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

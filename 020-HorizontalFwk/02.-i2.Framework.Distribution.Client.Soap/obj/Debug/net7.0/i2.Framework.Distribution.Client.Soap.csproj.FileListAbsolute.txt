@@ -1,0 +1,14 @@
+D:\git\i2\000-Assemblies\Debug\net7.0\i2.Framework.Distribution.Client.Soap.deps.json
+D:\git\i2\000-Assemblies\Debug\net7.0\i2.Framework.Distribution.Client.Soap.dll
+D:\git\i2\000-Assemblies\Debug\net7.0\i2.Framework.Distribution.Client.Soap.pdb
+D:\git\i2\000-Assemblies\Debug\net7.0\Inflexion2.XML
+D:\git\i2\020-HorizontalFwk\02.-i2.Framework.Distribution.Client.Soap\obj\Debug\net7.0\i2.Framework.Distribution.Client.Soap.csproj.AssemblyReference.cache
+D:\git\i2\020-HorizontalFwk\02.-i2.Framework.Distribution.Client.Soap\obj\Debug\net7.0\i2.Framework.Distribution.Client.Soap.GeneratedMSBuildEditorConfig.editorconfig
+D:\git\i2\020-HorizontalFwk\02.-i2.Framework.Distribution.Client.Soap\obj\Debug\net7.0\i2.Framework.Distribution.Client.Soap.AssemblyInfoInputs.cache
+D:\git\i2\020-HorizontalFwk\02.-i2.Framework.Distribution.Client.Soap\obj\Debug\net7.0\i2.Framework.Distribution.Client.Soap.AssemblyInfo.cs
+D:\git\i2\020-HorizontalFwk\02.-i2.Framework.Distribution.Client.Soap\obj\Debug\net7.0\i2.Framework.Distribution.Client.Soap.csproj.CoreCompileInputs.cache
+D:\git\i2\020-HorizontalFwk\02.-i2.Framework.Distribution.Client.Soap\obj\Debug\net7.0\i2.Framework.Distribution.Client.Soap.csproj.CopyComplete
+D:\git\i2\020-HorizontalFwk\02.-i2.Framework.Distribution.Client.Soap\obj\Debug\net7.0\i2.Framework.Distribution.Client.Soap.dll
+D:\git\i2\020-HorizontalFwk\02.-i2.Framework.Distribution.Client.Soap\obj\Debug\net7.0\refint\i2.Framework.Distribution.Client.Soap.dll
+D:\git\i2\020-HorizontalFwk\02.-i2.Framework.Distribution.Client.Soap\obj\Debug\net7.0\i2.Framework.Distribution.Client.Soap.pdb
+D:\git\i2\020-HorizontalFwk\02.-i2.Framework.Distribution.Client.Soap\obj\Debug\net7.0\ref\i2.Framework.Distribution.Client.Soap.dll

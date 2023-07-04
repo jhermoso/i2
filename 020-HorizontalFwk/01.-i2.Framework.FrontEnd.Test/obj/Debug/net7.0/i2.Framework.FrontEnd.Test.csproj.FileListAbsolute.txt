@@ -1,0 +1,6 @@
+D:\git\i2\000-Assemblies\Debug\net7.0\CoverletSourceRootsMapping
+D:\git\i2\020-HorizontalFwk\01.-i2.Framework.FrontEnd.Test\obj\Debug\net7.0\i2.Framework.FrontEnd.Test.csproj.AssemblyReference.cache
+D:\git\i2\020-HorizontalFwk\01.-i2.Framework.FrontEnd.Test\obj\Debug\net7.0\i2.Framework.FrontEnd.Test.GeneratedMSBuildEditorConfig.editorconfig
+D:\git\i2\020-HorizontalFwk\01.-i2.Framework.FrontEnd.Test\obj\Debug\net7.0\i2.Framework.FrontEnd.Test.AssemblyInfoInputs.cache
+D:\git\i2\020-HorizontalFwk\01.-i2.Framework.FrontEnd.Test\obj\Debug\net7.0\i2.Framework.FrontEnd.Test.AssemblyInfo.cs
+D:\git\i2\020-HorizontalFwk\01.-i2.Framework.FrontEnd.Test\obj\Debug\net7.0\i2.Framework.FrontEnd.Test.csproj.CoreCompileInputs.cache

@@ -1,0 +1,5 @@
+D:\git\i2\020-HorizontalFwk\01.-i2.Framework.FrontEnd.Console\obj\Debug\net7.0\i2.Framework.FrontEnd.Console.csproj.AssemblyReference.cache
+D:\git\i2\020-HorizontalFwk\01.-i2.Framework.FrontEnd.Console\obj\Debug\net7.0\i2.Framework.FrontEnd.Console.GeneratedMSBuildEditorConfig.editorconfig
+D:\git\i2\020-HorizontalFwk\01.-i2.Framework.FrontEnd.Console\obj\Debug\net7.0\i2.Framework.FrontEnd.Console.AssemblyInfoInputs.cache
+D:\git\i2\020-HorizontalFwk\01.-i2.Framework.FrontEnd.Console\obj\Debug\net7.0\i2.Framework.FrontEnd.Console.AssemblyInfo.cs
+D:\git\i2\020-HorizontalFwk\01.-i2.Framework.FrontEnd.Console\obj\Debug\net7.0\i2.Framework.FrontEnd.Console.csproj.CoreCompileInputs.cache

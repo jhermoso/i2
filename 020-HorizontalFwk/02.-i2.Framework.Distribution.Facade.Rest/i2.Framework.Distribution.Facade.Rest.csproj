@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+    <!-- common configurations -->
+    <PropertyGroup>
+        <AssemblyName>$(MSBuildProjectName)</AssemblyName>
+        <NeutralLanguage>en</NeutralLanguage>
+    </PropertyGroup>
+
+    <!-- compilation configuration for output path and documentation in debug -->
+
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>..\..\000-Assemblies\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <DocumentationFile>..\..\000-Documentation\Inflexion2.XML</DocumentationFile>
+    </PropertyGroup>
+
+    <!-- compilation configuration for output path and documentation in release -->
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>..\..\00-Assemblies\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <DocumentationFile>..\..\00-Documentation\Inflexion2.XML</DocumentationFile>
+    </PropertyGroup>    
+    
+  <ItemGroup>
+    <ProjectReference Include="..\02.-i2.Framework.Distribution.Contracts\i2.Framework.Distribution.Contracts.csproj" />
+    <ProjectReference Include="..\03.-i2.Framework.Application.Wrapper\i2.Framework.Application.Wrapper.csproj" />
+    <ProjectReference Include="..\03.-i2.Framework.Application.Contracts\i2.Framework.Application.Contracts.csproj" />
+    <ProjectReference Include="..\03.-i2.Framework.Application.Dtos\i2.Framework.Application.Dtos.csproj" />
+    <ProjectReference Include="..\05.-i2.Framework.Infrastructure.Resources\i2.Framework.Infrastructure.Resources.csproj" />
+  </ItemGroup>    
+    
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+</Project>

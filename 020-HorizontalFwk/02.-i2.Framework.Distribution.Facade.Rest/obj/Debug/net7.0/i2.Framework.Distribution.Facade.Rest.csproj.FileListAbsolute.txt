@@ -1,0 +1,7 @@
+D:\git\i2\020-HorizontalFwk\02.-i2.Framework.Distribution.Facade.Rest\obj\Debug\net7.0\i2.Framework.Distribution.Facade.Rest.csproj.AssemblyReference.cache
+D:\git\i2\020-HorizontalFwk\02.-i2.Framework.Distribution.Facade.Rest\obj\Debug\net7.0\i2.Framework.Distribution.Facade.Rest.GeneratedMSBuildEditorConfig.editorconfig
+D:\git\i2\020-HorizontalFwk\02.-i2.Framework.Distribution.Facade.Rest\obj\Debug\net7.0\i2.Framework.Distribution.Facade.Rest.AssemblyInfoInputs.cache
+D:\git\i2\020-HorizontalFwk\02.-i2.Framework.Distribution.Facade.Rest\obj\Debug\net7.0\i2.Framework.Distribution.Facade.Rest.AssemblyInfo.cs
+D:\git\i2\020-HorizontalFwk\02.-i2.Framework.Distribution.Facade.Rest\obj\Debug\net7.0\i2.Framework.Distribution.Facade.Rest.csproj.CoreCompileInputs.cache
+D:\git\i2\020-HorizontalFwk\02.-i2.Framework.Distribution.Facade.Rest\obj\Debug\net7.0\i2.Framework.Distribution.Facade.Rest.MvcApplicationPartsAssemblyInfo.cs
+D:\git\i2\020-HorizontalFwk\02.-i2.Framework.Distribution.Facade.Rest\obj\Debug\net7.0\i2.Framework.Distribution.Facade.Rest.MvcApplicationPartsAssemblyInfo.cache

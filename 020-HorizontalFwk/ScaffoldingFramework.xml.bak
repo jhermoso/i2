@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Solution>
+	<Layers>
+		<layer folderPrefix="01" name="FrontEnd"  > 
+			<Projects>
+				<project name = "Console" template="console" dotnetVersion="net7.0" >
+					<References>
+						<reference type="internal" name = "Contracts" 	from="Application"> </reference>
+						<reference type="internal" name = "Client.Rest" from="Distribution"> </reference>
+					</References>
+				</project>
+
+				<project name = "React" template="react" dotnetVersion="net7.0" >
+					<References>
+						<reference type="internal" name = "Contracts" 	from="Application"> </reference>
+						<reference type="internal" name = "Client.Rest" from="Distribution"> </reference>
+					</References>
+				</project>
+			</Projects>		
+		</layer>
+
+		<layer folderPrefix="02" name="Distribution">		
+			<Projects>
+				<project name = "Contracts" template="classlib" dotnetVersion="net7.0" >
+					<References>
+						<reference type="internal" name = "Contracts" 	from="Application"> </reference>
+					</References>
+				</project>
+				<project name = "Client.Soap" template="classlib" dotnetVersion="net7.0" >
+					<References>
+						<reference type="internal" name = "Facade.Soap" from="Distribution"> </reference>
+						<reference type="internal" name = "Contracts"   from="Distribution"></reference>
+					</References>
+				</project>
+				<project name = "Client.Rest" template="classlib" dotnetVersion="net7.0" >
+					<References>
+						<reference type="internal" name = "Facade.Rest" from="Distribution"></reference>
+						<reference type="internal" name = "Contracts"   from="Distribution"></reference>
+					</References>
+				</project>
+				<project name = "Facade.Soap" template="classlib" dotnetVersion="net7.0" >
+					<References>
+						<reference type="internal" name = "Contracts"  	from="Distribution"></reference>					
+						<reference type="internal" name = "Wrapper"  	from="Application"></reference>
+						<reference type="internal" name = "Contracts"  	from="Application"></reference>
+						<reference type="internal" name = "Dtos"  		from="Application"></reference>
+						<reference type="internal" name = "Resources"	from="Infrastructure"></reference>
+					</References>
+				</project>
+				<project name = "Facade.Rest" template="webapi" dotnetVersion="net7.0" >
+					<References>
+						<reference type="internal" name = "Contracts"  	from="Distribution"></reference>					
+						<reference type="internal" name = "Wrapper"  	from="Application"></reference>
+						<reference type="internal" name = "Contracts"  	from="Application"></reference>
+						<reference type="internal" name = "Dtos"  		from="Application"></reference>
+						<reference type="internal" name = "Resources"	from="Infrastructure"></reference>
+					</References>
+				</project>
+			</Projects>
+		</layer>
+		
+
+		<layer folderPrefix="03" name="Application">		
+			<Projects>
+				<project name="Wrapper" template="classlib" dotnetVersion="net7.0" >
+					<References>
+						<reference type="internal" name = "Contracts"  	from="Application"></reference>
+						<reference type="internal" name = "Dtos"  		from="Application"></reference>
+						<reference type="internal" name = "Contracts"  	from="Domain"></reference>
+						<reference type="internal" name = "Model"  		from="Domain"></reference>
+						<reference type="internal" name = "Data"  		from="Domain"></reference>
+						<reference type="internal" name = "Contracts"  	from="Infrastructure"></reference>
+						<reference type="internal" name = "Resources"	from="Infrastructure"></reference>
+					</References>
+				</project>
+				<project name="Contracts" template="classlib" dotnetVersion="net7.0" >
+					<References>
+						<reference type="internal" name = "Contracts"  	from="Domain"></reference>
+						<reference type="internal" name = "Contracts"	from="Infrastructure"></reference>
+						<reference type="internal" name = "Resources"	from="Infrastructure"></reference>
+					</References>
+				</project>
+				<project name="Dtos" template="classlib" dotnetVersion="net7.0" >
+					<References>
+					</References>
+				</project>
+			</Projects>
+		</layer>
+		
+		<layer folderPrefix="04"  name="Domain">			
+			<Projects>
+				<project name="Model" template="classlib" dotnetVersion="net7.0" >
+					<References>
+						<reference type="internal" name = "Contracts"	from="Domain"></reference>
+						<reference type="internal" name = "Data"  		from="Domain"></reference>
+						<reference type="internal" name = "Contracts"	from="Infrastructure"></reference>
+						<reference type="internal" name = "Resources"	from="Infrastructure"></reference>
+					</References>
+				</project>
+				<project name="Contracts" template="classlib" dotnetVersion="net7.0" >
+					<References>
+						<reference type="internal" name="Contracts"  	from="Infrastructure"></reference>
+					</References>
+				</project>
+				<project name="Data" template="classlib" dotnetVersion="net7.0" >
+				</project>		
+			</Projects>
+		</layer>
+		<layer folderPrefix="05" name="Infrastructure">	
+			<Projects>
+
+				<project name="Contracts" template="classlib" dotnetVersion="net7.0" >
+				</project>					
+				<project name="NhRepository" template="classlib" dotnetVersion="net6.0" >
+					<References>
+						<reference type="internal" name="Contracts"  	from="Infrastructure"></reference>
+						<reference type="nuget" name = "NHibernate"  		minversion="5.4.2"></reference>
+						<reference type="nuget" name = "FluentNHibernate"  	minversion="3.2.1"></reference>
+					</References>
+				</project>
+				<project name="EfRepository" template="classlib" dotnetVersion="net7.0" >
+					<References>
+						<reference type="internal" 	name="Contracts"  	from="Infrastructure"></reference>
+						<reference type="nuget" 	name = "Microsoft.EntityFrameworkCore"  	minversion="7.0.8"></reference>
+					</References>
+				</project>
+				<project name="Resources" template="classlib" dotnetVersion="net7.0" >
+				</project>
+			</Projects>
+		</layer>
+	</Layers>
+	<FilesToRemoveFromProjects>
+		<file name="Program.cs"/>
+		<file name="WeatherForecast.cs"/>
+		<file name="Class1.cs"/>
+		<file name="UnitTest1.cs"/>
+	</FilesToRemoveFromProjects>
+</Solution>

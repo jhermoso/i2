@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\03.-i2.Framework.Application.Contracts\i2.Framework.Application.Contracts.csproj" />
+    <ProjectReference Include="..\03.-i2.Framework.Application.Dtos\i2.Framework.Application.Dtos.csproj" />
+    <ProjectReference Include="..\04.-i2.Framework.Domain.Contracts\i2.Framework.Domain.Contracts.csproj" />
+    <ProjectReference Include="..\04.-i2.Framework.Domain.Model\i2.Framework.Domain.Model.csproj" />
+    <ProjectReference Include="..\04.-i2.Framework.Domain.Data\i2.Framework.Domain.Data.csproj" />
+    <ProjectReference Include="..\05.-i2.Framework.Infrastructure.Contracts\i2.Framework.Infrastructure.Contracts.csproj" />
+    <ProjectReference Include="..\05.-i2.Framework.Infrastructure.Resources\i2.Framework.Infrastructure.Resources.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+    <!-- common configurations -->
+    <PropertyGroup>
+        <AssemblyName>$(MSBuildProjectName)</AssemblyName>
+        <NeutralLanguage>en</NeutralLanguage>
+    </PropertyGroup>
+
+    <!-- compilation configuration for output path and documentation in debug -->
+
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>..\..\000-Assemblies\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <DocumentationFile>..\..\000-Documentation\Inflexion2.XML</DocumentationFile>
+    </PropertyGroup>
+
+    <!-- compilation configuration for output path and documentation in release -->
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>..\..\00-Assemblies\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <DocumentationFile>..\..\00-Documentation\Inflexion2.XML</DocumentationFile>
+    </PropertyGroup>
+</Project>

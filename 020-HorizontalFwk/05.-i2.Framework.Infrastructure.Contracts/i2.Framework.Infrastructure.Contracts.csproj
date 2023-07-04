@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>$(MSBuildProjectName)</AssemblyName>
+        <NeutralLanguage>en</NeutralLanguage>
+        <PackageOutputPath>..\..\..\..\Build\$(Configuration)\</PackageOutputPath>
+    </PropertyGroup>
+
+    <!-- common configurations -->
+    <PropertyGroup>
+        <AssemblyName>$(MSBuildProjectName)</AssemblyName>
+        <NeutralLanguage>en</NeutralLanguage>
+    </PropertyGroup>
+
+    <!-- compilation configuration for output path and documentation in debug -->
+
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>..\..\000-Assemblies\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <DocumentationFile>..\..\000-Documentation\Inflexion2.XML</DocumentationFile>
+    </PropertyGroup>
+
+    <!-- compilation configuration for output path and documentation in release -->
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>..\..\00-Assemblies\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <DocumentationFile>..\..\00-Documentation\Inflexion2.XML</DocumentationFile>
+    </PropertyGroup>
+    
+</Project>

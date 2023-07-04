@@ -1,0 +1,825 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\git\\i2\\020-HorizontalFwk\\01.-i2.Framework.FrontEnd.Console\\i2.Framework.FrontEnd.Console.csproj": {}
+  },
+  "projects": {
+    "D:\\git\\i2\\020-HorizontalFwk\\01.-i2.Framework.FrontEnd.Console\\i2.Framework.FrontEnd.Console.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\git\\i2\\020-HorizontalFwk\\01.-i2.Framework.FrontEnd.Console\\i2.Framework.FrontEnd.Console.csproj",
+        "projectName": "i2.Framework.FrontEnd.Console",
+        "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\01.-i2.Framework.FrontEnd.Console\\i2.Framework.FrontEnd.Console.csproj",
+        "packagesPath": "C:\\Users\\vie\\.nuget\\packages\\",
+        "outputPath": "D:\\git\\i2\\020-HorizontalFwk\\01.-i2.Framework.FrontEnd.Console\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\git\\i2\\020-HorizontalFwk\\02.-i2.Framework.Distribution.Client.Rest\\i2.Framework.Distribution.Client.Rest.csproj": {
+                "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\02.-i2.Framework.Distribution.Client.Rest\\i2.Framework.Distribution.Client.Rest.csproj"
+              },
+              "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Contracts\\i2.Framework.Application.Contracts.csproj": {
+                "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Contracts\\i2.Framework.Application.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\git\\i2\\020-HorizontalFwk\\02.-i2.Framework.Distribution.Client.Rest\\i2.Framework.Distribution.Client.Rest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\git\\i2\\020-HorizontalFwk\\02.-i2.Framework.Distribution.Client.Rest\\i2.Framework.Distribution.Client.Rest.csproj",
+        "projectName": "i2.Framework.Distribution.Client.Rest",
+        "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\02.-i2.Framework.Distribution.Client.Rest\\i2.Framework.Distribution.Client.Rest.csproj",
+        "packagesPath": "C:\\Users\\vie\\.nuget\\packages\\",
+        "outputPath": "D:\\git\\i2\\020-HorizontalFwk\\02.-i2.Framework.Distribution.Client.Rest\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\git\\i2\\020-HorizontalFwk\\02.-i2.Framework.Distribution.Contracts\\i2.Framework.Distribution.Contracts.csproj": {
+                "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\02.-i2.Framework.Distribution.Contracts\\i2.Framework.Distribution.Contracts.csproj"
+              },
+              "D:\\git\\i2\\020-HorizontalFwk\\02.-i2.Framework.Distribution.Facade.Rest\\i2.Framework.Distribution.Facade.Rest.csproj": {
+                "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\02.-i2.Framework.Distribution.Facade.Rest\\i2.Framework.Distribution.Facade.Rest.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\git\\i2\\020-HorizontalFwk\\02.-i2.Framework.Distribution.Contracts\\i2.Framework.Distribution.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\git\\i2\\020-HorizontalFwk\\02.-i2.Framework.Distribution.Contracts\\i2.Framework.Distribution.Contracts.csproj",
+        "projectName": "i2.Framework.Distribution.Contracts",
+        "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\02.-i2.Framework.Distribution.Contracts\\i2.Framework.Distribution.Contracts.csproj",
+        "packagesPath": "C:\\Users\\vie\\.nuget\\packages\\",
+        "outputPath": "D:\\git\\i2\\020-HorizontalFwk\\02.-i2.Framework.Distribution.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Contracts\\i2.Framework.Application.Contracts.csproj": {
+                "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Contracts\\i2.Framework.Application.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\git\\i2\\020-HorizontalFwk\\02.-i2.Framework.Distribution.Facade.Rest\\i2.Framework.Distribution.Facade.Rest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\git\\i2\\020-HorizontalFwk\\02.-i2.Framework.Distribution.Facade.Rest\\i2.Framework.Distribution.Facade.Rest.csproj",
+        "projectName": "i2.Framework.Distribution.Facade.Rest",
+        "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\02.-i2.Framework.Distribution.Facade.Rest\\i2.Framework.Distribution.Facade.Rest.csproj",
+        "packagesPath": "C:\\Users\\vie\\.nuget\\packages\\",
+        "outputPath": "D:\\git\\i2\\020-HorizontalFwk\\02.-i2.Framework.Distribution.Facade.Rest\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\git\\i2\\020-HorizontalFwk\\02.-i2.Framework.Distribution.Contracts\\i2.Framework.Distribution.Contracts.csproj": {
+                "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\02.-i2.Framework.Distribution.Contracts\\i2.Framework.Distribution.Contracts.csproj"
+              },
+              "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Contracts\\i2.Framework.Application.Contracts.csproj": {
+                "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Contracts\\i2.Framework.Application.Contracts.csproj"
+              },
+              "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Dtos\\i2.Framework.Application.Dtos.csproj": {
+                "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Dtos\\i2.Framework.Application.Dtos.csproj"
+              },
+              "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Wrapper\\i2.Framework.Application.Wrapper.csproj": {
+                "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Wrapper\\i2.Framework.Application.Wrapper.csproj"
+              },
+              "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Resources\\i2.Framework.Infrastructure.Resources.csproj": {
+                "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Resources\\i2.Framework.Infrastructure.Resources.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Contracts\\i2.Framework.Application.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Contracts\\i2.Framework.Application.Contracts.csproj",
+        "projectName": "i2.Framework.Application.Contracts",
+        "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Contracts\\i2.Framework.Application.Contracts.csproj",
+        "packagesPath": "C:\\Users\\vie\\.nuget\\packages\\",
+        "outputPath": "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Contracts\\i2.Framework.Domain.Contracts.csproj": {
+                "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Contracts\\i2.Framework.Domain.Contracts.csproj"
+              },
+              "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Contracts\\i2.Framework.Infrastructure.Contracts.csproj": {
+                "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Contracts\\i2.Framework.Infrastructure.Contracts.csproj"
+              },
+              "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Resources\\i2.Framework.Infrastructure.Resources.csproj": {
+                "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Resources\\i2.Framework.Infrastructure.Resources.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Dtos\\i2.Framework.Application.Dtos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Dtos\\i2.Framework.Application.Dtos.csproj",
+        "projectName": "i2.Framework.Application.Dtos",
+        "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Dtos\\i2.Framework.Application.Dtos.csproj",
+        "packagesPath": "C:\\Users\\vie\\.nuget\\packages\\",
+        "outputPath": "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Dtos\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Wrapper\\i2.Framework.Application.Wrapper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Wrapper\\i2.Framework.Application.Wrapper.csproj",
+        "projectName": "i2.Framework.Application.Wrapper",
+        "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Wrapper\\i2.Framework.Application.Wrapper.csproj",
+        "packagesPath": "C:\\Users\\vie\\.nuget\\packages\\",
+        "outputPath": "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Wrapper\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Contracts\\i2.Framework.Application.Contracts.csproj": {
+                "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Contracts\\i2.Framework.Application.Contracts.csproj"
+              },
+              "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Dtos\\i2.Framework.Application.Dtos.csproj": {
+                "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Dtos\\i2.Framework.Application.Dtos.csproj"
+              },
+              "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Contracts\\i2.Framework.Domain.Contracts.csproj": {
+                "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Contracts\\i2.Framework.Domain.Contracts.csproj"
+              },
+              "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Data\\i2.Framework.Domain.Data.csproj": {
+                "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Data\\i2.Framework.Domain.Data.csproj"
+              },
+              "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Model\\i2.Framework.Domain.Model.csproj": {
+                "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Model\\i2.Framework.Domain.Model.csproj"
+              },
+              "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Contracts\\i2.Framework.Infrastructure.Contracts.csproj": {
+                "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Contracts\\i2.Framework.Infrastructure.Contracts.csproj"
+              },
+              "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Resources\\i2.Framework.Infrastructure.Resources.csproj": {
+                "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Resources\\i2.Framework.Infrastructure.Resources.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Contracts\\i2.Framework.Domain.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Contracts\\i2.Framework.Domain.Contracts.csproj",
+        "projectName": "i2.Framework.Domain.Contracts",
+        "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Contracts\\i2.Framework.Domain.Contracts.csproj",
+        "packagesPath": "C:\\Users\\vie\\.nuget\\packages\\",
+        "outputPath": "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Contracts\\i2.Framework.Infrastructure.Contracts.csproj": {
+                "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Contracts\\i2.Framework.Infrastructure.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Data\\i2.Framework.Domain.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Data\\i2.Framework.Domain.Data.csproj",
+        "projectName": "i2.Framework.Domain.Data",
+        "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Data\\i2.Framework.Domain.Data.csproj",
+        "packagesPath": "C:\\Users\\vie\\.nuget\\packages\\",
+        "outputPath": "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Model\\i2.Framework.Domain.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Model\\i2.Framework.Domain.Model.csproj",
+        "projectName": "i2.Framework.Domain.Model",
+        "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Model\\i2.Framework.Domain.Model.csproj",
+        "packagesPath": "C:\\Users\\vie\\.nuget\\packages\\",
+        "outputPath": "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Contracts\\i2.Framework.Domain.Contracts.csproj": {
+                "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Contracts\\i2.Framework.Domain.Contracts.csproj"
+              },
+              "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Data\\i2.Framework.Domain.Data.csproj": {
+                "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Data\\i2.Framework.Domain.Data.csproj"
+              },
+              "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Contracts\\i2.Framework.Infrastructure.Contracts.csproj": {
+                "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Contracts\\i2.Framework.Infrastructure.Contracts.csproj"
+              },
+              "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Resources\\i2.Framework.Infrastructure.Resources.csproj": {
+                "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Resources\\i2.Framework.Infrastructure.Resources.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Contracts\\i2.Framework.Infrastructure.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Contracts\\i2.Framework.Infrastructure.Contracts.csproj",
+        "projectName": "i2.Framework.Infrastructure.Contracts",
+        "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Contracts\\i2.Framework.Infrastructure.Contracts.csproj",
+        "packagesPath": "C:\\Users\\vie\\.nuget\\packages\\",
+        "outputPath": "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Resources\\i2.Framework.Infrastructure.Resources.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Resources\\i2.Framework.Infrastructure.Resources.csproj",
+        "projectName": "i2.Framework.Infrastructure.Resources",
+        "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Resources\\i2.Framework.Infrastructure.Resources.csproj",
+        "packagesPath": "C:\\Users\\vie\\.nuget\\packages\\",
+        "outputPath": "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Resources\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

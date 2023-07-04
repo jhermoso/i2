@@ -1,0 +1,225 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "i2.Framework.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "i2.Framework.Domain.Contracts": "1.0.0",
+          "i2.Framework.Infrastructure.Contracts": "1.0.0",
+          "i2.Framework.Infrastructure.Resources": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/i2.Framework.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/i2.Framework.Application.Contracts.dll": {}
+        }
+      },
+      "i2.Framework.Application.Dtos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/i2.Framework.Application.Dtos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/i2.Framework.Application.Dtos.dll": {}
+        }
+      },
+      "i2.Framework.Domain.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "i2.Framework.Infrastructure.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/i2.Framework.Domain.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/i2.Framework.Domain.Contracts.dll": {}
+        }
+      },
+      "i2.Framework.Domain.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/i2.Framework.Domain.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/i2.Framework.Domain.Data.dll": {}
+        }
+      },
+      "i2.Framework.Domain.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "i2.Framework.Domain.Contracts": "1.0.0",
+          "i2.Framework.Domain.Data": "1.0.0",
+          "i2.Framework.Infrastructure.Contracts": "1.0.0",
+          "i2.Framework.Infrastructure.Resources": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/i2.Framework.Domain.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/i2.Framework.Domain.Model.dll": {}
+        }
+      },
+      "i2.Framework.Infrastructure.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/i2.Framework.Infrastructure.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/i2.Framework.Infrastructure.Contracts.dll": {}
+        }
+      },
+      "i2.Framework.Infrastructure.Resources/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/i2.Framework.Infrastructure.Resources.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/i2.Framework.Infrastructure.Resources.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "i2.Framework.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../03.-i2.Framework.Application.Contracts/i2.Framework.Application.Contracts.csproj",
+      "msbuildProject": "../03.-i2.Framework.Application.Contracts/i2.Framework.Application.Contracts.csproj"
+    },
+    "i2.Framework.Application.Dtos/1.0.0": {
+      "type": "project",
+      "path": "../03.-i2.Framework.Application.Dtos/i2.Framework.Application.Dtos.csproj",
+      "msbuildProject": "../03.-i2.Framework.Application.Dtos/i2.Framework.Application.Dtos.csproj"
+    },
+    "i2.Framework.Domain.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../04.-i2.Framework.Domain.Contracts/i2.Framework.Domain.Contracts.csproj",
+      "msbuildProject": "../04.-i2.Framework.Domain.Contracts/i2.Framework.Domain.Contracts.csproj"
+    },
+    "i2.Framework.Domain.Data/1.0.0": {
+      "type": "project",
+      "path": "../04.-i2.Framework.Domain.Data/i2.Framework.Domain.Data.csproj",
+      "msbuildProject": "../04.-i2.Framework.Domain.Data/i2.Framework.Domain.Data.csproj"
+    },
+    "i2.Framework.Domain.Model/1.0.0": {
+      "type": "project",
+      "path": "../04.-i2.Framework.Domain.Model/i2.Framework.Domain.Model.csproj",
+      "msbuildProject": "../04.-i2.Framework.Domain.Model/i2.Framework.Domain.Model.csproj"
+    },
+    "i2.Framework.Infrastructure.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../05.-i2.Framework.Infrastructure.Contracts/i2.Framework.Infrastructure.Contracts.csproj",
+      "msbuildProject": "../05.-i2.Framework.Infrastructure.Contracts/i2.Framework.Infrastructure.Contracts.csproj"
+    },
+    "i2.Framework.Infrastructure.Resources/1.0.0": {
+      "type": "project",
+      "path": "../05.-i2.Framework.Infrastructure.Resources/i2.Framework.Infrastructure.Resources.csproj",
+      "msbuildProject": "../05.-i2.Framework.Infrastructure.Resources/i2.Framework.Infrastructure.Resources.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "i2.Framework.Application.Contracts >= 1.0.0",
+      "i2.Framework.Application.Dtos >= 1.0.0",
+      "i2.Framework.Domain.Contracts >= 1.0.0",
+      "i2.Framework.Domain.Data >= 1.0.0",
+      "i2.Framework.Domain.Model >= 1.0.0",
+      "i2.Framework.Infrastructure.Contracts >= 1.0.0",
+      "i2.Framework.Infrastructure.Resources >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\vie\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Wrapper\\i2.Framework.Application.Wrapper.csproj",
+      "projectName": "i2.Framework.Application.Wrapper",
+      "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Wrapper\\i2.Framework.Application.Wrapper.csproj",
+      "packagesPath": "C:\\Users\\vie\\.nuget\\packages\\",
+      "outputPath": "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Wrapper\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\vie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Contracts\\i2.Framework.Application.Contracts.csproj": {
+              "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Contracts\\i2.Framework.Application.Contracts.csproj"
+            },
+            "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Dtos\\i2.Framework.Application.Dtos.csproj": {
+              "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\03.-i2.Framework.Application.Dtos\\i2.Framework.Application.Dtos.csproj"
+            },
+            "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Contracts\\i2.Framework.Domain.Contracts.csproj": {
+              "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Contracts\\i2.Framework.Domain.Contracts.csproj"
+            },
+            "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Data\\i2.Framework.Domain.Data.csproj": {
+              "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Data\\i2.Framework.Domain.Data.csproj"
+            },
+            "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Model\\i2.Framework.Domain.Model.csproj": {
+              "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\04.-i2.Framework.Domain.Model\\i2.Framework.Domain.Model.csproj"
+            },
+            "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Contracts\\i2.Framework.Infrastructure.Contracts.csproj": {
+              "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Contracts\\i2.Framework.Infrastructure.Contracts.csproj"
+            },
+            "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Resources\\i2.Framework.Infrastructure.Resources.csproj": {
+              "projectPath": "D:\\git\\i2\\020-HorizontalFwk\\05.-i2.Framework.Infrastructure.Resources\\i2.Framework.Infrastructure.Resources.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

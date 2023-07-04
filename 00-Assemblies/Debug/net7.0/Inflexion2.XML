@@ -1,0 +1,593 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>i2.Framework.Domain.Model</name>
+    </assembly>
+    <members>
+        <member name="T:Inflexion2.Domain.ChildrenRelationshipDeleteBehaviorAttribute">
+            <summary>
+                Facilitates indicating which Classes are forbidden deleteable
+            </summary>
+            <remarks>
+                This is intended for use with <see cref="!:IEntity&lt;TIdentifier&gt;" />.  It may NOT be used on a <see cref="!:ValueObject" />.
+            </remarks>
+        </member>
+        <member name="F:Inflexion2.Domain.ChildrenRelationshipDeleteBehaviorAttribute.Behavior">
+            <summary>
+            Discriminant value. allow only threee behaviors
+            </summary>
+        </member>
+        <member name="M:Inflexion2.Domain.ChildrenRelationshipDeleteBehaviorAttribute.#ctor">
+            <summary>
+            empty constructor set default value to cascade
+            TODO: modificar este comportamiento para que sea cascade en composición y orphannull en agregación.
+            </summary>
+        </member>
+        <member name="M:Inflexion2.Domain.ChildrenRelationshipDeleteBehaviorAttribute.#ctor(Inflexion2.Domain.Delete)">
+            <summary>
+            .es Constructor para establecer el comportamiento deseado
+            .en constructor to set the behavieor
+            </summary>
+            <param name="attributeValue"></param>
+        </member>
+        <member name="T:Inflexion2.Domain.Delete">
+            <summary>
+            .es lista de comportamientos validos 
+            .en valid behavieors listing
+            </summary>
+        </member>
+        <member name="F:Inflexion2.Domain.Delete.Cascade">
+            <summary>
+            .es con este comportamiento indicamos que al borrar la clase se borran todos las entidades hijas.
+            Este comportamiento solo tiene sentido en relaciones de composición
+            .en delete the children entitys 
+            </summary>
+        </member>
+        <member name="F:Inflexion2.Domain.Delete.Restrict">
+            <summary>
+            .es indicamos que no podemos borrar la entidad si esta relación/propiedad tiene hijos. 
+            Este comportamiento solo tiene sentido en relaciones de composición
+            .en Can´t delete if there is at least one child entity or value object in this property/relationship
+            </summary>
+        </member>
+        <member name="T:i2.Framework.Domain.Model.Domain.DateGreaterThanAttribute">
+            <summary>
+            Clase de tipo atributo encargado de validar fechas.
+            </summary>
+            <remarks>
+            Sin comentarios adicionales.
+            </remarks>
+        </member>
+        <member name="F:i2.Framework.Domain.Model.Domain.DateGreaterThanAttribute.basePropertyName">
+            <summary>
+            Variable privada que representa el nombre de la propiedad.
+            </summary>
+            <remarks>
+            Sin comentarios adicionales.
+            </remarks>
+        </member>
+        <member name="F:i2.Framework.Domain.Model.Domain.DateGreaterThanAttribute.errorMessage">
+            <summary>
+            Variable privada encargada de almacenar el mensaje de error.
+            </summary>
+            <remarks>
+            Sin comentarios adicionales.
+            </remarks>
+        </member>
+        <member name="M:i2.Framework.Domain.Model.Domain.DateGreaterThanAttribute.#ctor(System.String,System.String)">
+            <summary>
+            Inicializa una nueva instancia de la clase <see cref="T:i2.Framework.Domain.Model.Domain.DateGreaterThanAttribute"/>.
+            </summary>
+            <param name="basePropertyName">
+            Parámetro que indica el nombre base de la propiedad fecha de la que comparar.
+            </param>
+            <param name="errorMessage">
+            Parámetro que indica el mensaje en caso de error.
+            </param>
+        </member>
+        <member name="M:i2.Framework.Domain.Model.Domain.DateGreaterThanAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            Función encargada de validar si una fecha es mayor a otra.
+            </summary>
+            <param name="value">
+            Parámetro que indica la fecha a comparar.
+            </param>
+            <param name="validationContext">
+            Parámetro que indica el contexto de validación.
+            </param>
+            <returns>
+            Devuelve <c>true</c> si el valor de la fecha es válido y <c>false</c> en caso contrario.
+            </returns>
+        </member>
+        <member name="T:i2.Framework.Domain.Model.Domain.EntityForbiddenDeleteAttribute">
+            <summary>
+                Facilitates indicating which Classes are logical deleteable
+            </summary>
+            <remarks>
+                This is intended for use with <see cref="!:IEntity&lt;TIdentifier&gt;" />.  It may NOT be used on a <see cref="!:ValueObject" />.
+            </remarks>
+        </member>
+        <member name="T:i2.Framework.Domain.Model.Domain.GreaterOrEqualThanCurrentDateAttribute">
+            <summary>
+            Clase atributo encargada comprobar si una fecha es menor
+            que la fecha actual.
+            </summary>
+            <remarks>
+            Sin comentarios adicionales.
+            </remarks>
+        </member>
+        <member name="F:i2.Framework.Domain.Model.Domain.GreaterOrEqualThanCurrentDateAttribute.errorMessage">
+            <summary>
+            Variable encargada de almacenar el mensaje de error.
+            </summary>
+        </member>
+        <member name="M:i2.Framework.Domain.Model.Domain.GreaterOrEqualThanCurrentDateAttribute.#ctor">
+            <summary>
+            Inicializa una nueva instancia de la clase <see cref="T:GreaterOrEqualThanCurrentDateAttribute"/>.
+            </summary>
+            <remarks>
+            Sin comentarios adicionales.
+            </remarks>
+        </member>
+        <member name="M:i2.Framework.Domain.Model.Domain.GreaterOrEqualThanCurrentDateAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            Función encargada de validar si una fecha es mayor a otra.
+            </summary>
+            <param name="value">
+            Parámetro que indica la fecha a comparar.
+            </param>
+            <param name="validationContext">
+            Parámetro que indica el contexto de validación.
+            </param>
+            <returns>
+            Devuelve <c>true</c> si el valor de la fecha es válido y <c>false</c> en caso contrario.
+            </returns>
+        </member>
+        <member name="T:i2.Framework.Domain.Model.Domain.GreaterThanAttribute">
+            <summary>
+            Clase de tipo atributo encargado de validar datos dentro de un rango.
+            </summary>
+            <remarks>
+            Sin comentarios adicionales.
+            </remarks>
+        </member>
+        <member name="F:i2.Framework.Domain.Model.Domain.GreaterThanAttribute.basePropertyName">
+            <summary>
+            Variable privada que representa el nombre de la propiedad.
+            </summary>
+            <remarks>
+            Sin comentarios adicionales.
+            </remarks>
+        </member>
+        <member name="F:i2.Framework.Domain.Model.Domain.GreaterThanAttribute.errorMessage">
+            <summary>
+            Variable privada encargada de almacenar el mensaje de error.
+            </summary>
+            <remarks>
+            Sin comentarios adicionales.
+            </remarks>
+        </member>
+        <member name="M:i2.Framework.Domain.Model.Domain.GreaterThanAttribute.#ctor(System.String,System.String)">
+            <summary>
+            Inicializa una nueva instancia de la clase <see cref="T:GreaterThanAttribute"/>.
+            </summary>
+            <remarks>
+            Sin comentarios adicionales.
+            </remarks>
+            <param name="basePropertyName">
+            Parámetro que indica el nombre base de la propiedad de la que comparar.
+            </param>
+            <param name="errorMessage">
+            Parámetro que indica el mensaje en caso de error.
+            </param>
+        </member>
+        <member name="M:i2.Framework.Domain.Model.Domain.GreaterThanAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            Función encargada de validar si un número es mayor que otro.
+            </summary>
+            <param name="value">
+            Parámetro que indica el número a comparar.
+            </param>
+            <param name="validationContext">
+            Parámetro que indica el contexto de validación.
+            </param>
+            <returns>
+            Devuelve <c>true</c> si el valor a comparar es mayor y <c>false</c> en caso contrario.
+            </returns>
+        </member>
+        <member name="T:i2.Framework.Domain.Model.Domain.LogicalDeleteAttribute">
+            <summary>
+                Facilitates indicating which Classes are logical deleteable
+            </summary>
+            <remarks>
+                This is intended for use with <see cref="!:IEntity&lt;TIdentifier&gt;" />.  It may NOT be used on a <see cref="!:ValueObject" />.
+            </remarks>
+        </member>
+        <member name="T:i2.Framework.Domain.Model.Domain.MinimumCollectionSizeAttribute">
+            <summary>
+            Clase atributo para la validación de tamaño mínimo de una colección.
+            </summary>
+            <remarks>
+            Validamos el número de elementos mínimos que tiene que tener la colección.
+            </remarks>
+        </member>
+        <member name="F:i2.Framework.Domain.Model.Domain.MinimumCollectionSizeAttribute.minSize">
+            <summary>
+             Variable privada que indica el tamañon mínimo de la colección.
+            </summary>
+            <remarks>
+            Sin comentarios adicionales.
+            </remarks>
+        </member>
+        <member name="M:i2.Framework.Domain.Model.Domain.MinimumCollectionSizeAttribute.#ctor(System.Int32)">
+            <summary>
+            Inicializa una nueva instancia de la clase MinimumCollectionSizeAttribute.
+            </summary>
+            <remarks>
+            Sin comentarios adicionales.
+            </remarks>
+            <param name="minSize">
+            Parámetro que indica el tamaño mínimo.
+            </param>
+        </member>
+        <member name="M:i2.Framework.Domain.Model.Domain.MinimumCollectionSizeAttribute.IsValid(System.Object)">
+            <summary>
+            Función para validar el tamaño mínimo de una colección.
+            </summary>
+            <param name="value">
+            Parámetro que corresponde a la colección que se quiere validar.
+            </param>
+            <returns>
+            Devuelve <c>true</c> sin la colección cumple con el tamaño mínimo y <c>false</c>
+            en caso contrario.
+            </returns>
+        </member>
+        <member name="T:i2.Framework.Domain.Model.Entity`2">
+            <summary>
+            Clase pública abstracta para representar las entidades del negocio.
+            </summary>
+            <remarks>
+            La clase abstracta <see cref="T:i2.Framework.Domain.Contracts.IEntity`1"/> representa una clase base de tipo
+            entidad de negocio.
+            </remarks>
+            <typeparam name="TEntity">
+            Tipo genérico para representar el propio tipo del identificador.
+            su inclusión se justifica para facilitar las operaciones de reflexión, 
+            concretamente para facilitar la construción del metodo CanDelete del AgregateRoot.
+            </typeparam>
+            <typeparam name="TIdentifier">
+            Tipo genérico para representar el tipo de identificador de las
+            entidades y que es necesario para los repositorios.
+            </typeparam>
+            <seealso cref="T:Inflexion2.Domain.IEntity{TIdentifier}" />
+        </member>
+        <member name="F:i2.Framework.Domain.Model.Entity`2.HASH_MULTIPLIER">
+            <summary>
+                To help ensure hashcode uniqueness, a carefully selected random number multiplier 
+                is used within the calculation.  Goodrich and Tamassia's Data Structures and
+                Algorithms in Java asserts that 31, 33, 37, 39 and 41 will produce the fewest number
+                of collissions.  See http://computinglife.wordpress.com/2008/11/20/why-do-hash-functions-use-prime-numbers/
+                for more information.
+            </summary>
+        </member>
+        <member name="F:i2.Framework.Domain.Model.Entity`2.id">
+            <summary>
+            Identificador único de la entidad.
+            </summary>
+            <remarks>
+            Este campo o variable se utiliza conjuntamente con la propiedad
+            <see cref="P:i2.Framework.Domain.Model.Entity`2.Id"/>.
+            </remarks>
+        </member>
+        <member name="F:i2.Framework.Domain.Model.Entity`2.cachedHashcode">
+            <summary>
+            Derived from Hexacore
+            
+            </summary>
+        </member>
+        <member name="F:i2.Framework.Domain.Model.Entity`2.signaturePropertiesDictionary">
+            <summary>
+                This static member caches the domain signature properties to avoid looking them up for 
+                each instance of the same type.
+            
+                A description of the very slick ThreadStatic attribute may be found at 
+                http://www.dotnetjunkies.com/WebLog/chris.taylor/archive/2005/08/18/132026.aspx
+            </summary>
+        </member>
+        <member name="P:i2.Framework.Domain.Model.Entity`2.Id">
+            <summary>
+            Devuelve el identificador único de la entidad.
+            </summary>
+            <value>
+            Identificador único de la entidad.
+            </value>
+            <remarks>
+            <para>
+            El valor del identificador único será utilizado como
+            criterio principal durante la igualdad y comparación entre
+            entidades.
+            </para>
+            <para>
+            TIdentifier Representa el tipo de datos del identificador único
+            de la entidad.
+            </para>
+            </remarks>
+        </member>
+        <member name="P:i2.Framework.Domain.Model.Entity`2.ActualType">
+            <summary>
+            Devuelve el tipo actual de la entidad, con independencia
+            del nivel en el que nos encontremos en la jerarquía de clases.
+            </summary>
+            <remarks>
+            El tipo real será utilizado como criterio principal
+            durante la igualdad y comparación entre entidades.
+            </remarks>
+            <value>
+            El tipo real (tipo <see cref="T:System.Type"/> hoja) de la
+            entidad.
+            </value>
+        </member>
+        <member name="M:i2.Framework.Domain.Model.Entity`2.#ctor(`1)">
+            <summary>
+            Constructor de la clase.
+            </summary>
+            <remarks>
+            El constructor nos permite crear una entidad de acuerdo al
+            identificador único.
+            </remarks>
+            <param name="id">
+            Identificador unívoco de la entidad.
+            </param>
+        </member>
+        <member name="M:i2.Framework.Domain.Model.Entity`2.#ctor">
+            <summary>
+            Constructor vacio de la clase.
+            </summary>
+            <remarks>
+            El constructor nos permite crear una entidad de acuerdo al
+            identificador único.
+            </remarks>
+        </member>
+        <member name="M:i2.Framework.Domain.Model.Entity`2.CompareTo(System.Object)">
+            <summary>
+            Define la función encargada de comparar u ordenar objetos.
+            </summary>
+            <remarks>
+            Compara el identificador único de dos entidades para saber si
+            son iguales o no.
+            </remarks>
+            <param name="element">
+            Parámetro que hace referencia al elemento a comparar.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Lanzada cuando el valor del argumento <c>element</c> es null.
+            </exception>
+            <exception cref="T:System.ArgumentException">
+            Lanzada cuando el valor de la variable <c>otherEntity</c> es null.
+            </exception>
+            <returns>
+            Devuelve un entero que indica si la comparación es correcta o no.
+            </returns>
+        </member>
+        <member name="M:i2.Framework.Domain.Model.Entity`2.CompareTo(i2.Framework.Domain.Contracts.IEntity{`1})">
+            <summary>
+            Define la función encargada de comparar u ordenar objetos.
+            </summary>
+            <remarks>
+            Compara el identificador único de dos entidades para saber si
+            son iguales o no.
+            </remarks>
+            <param name="entityIdentifier">
+            Parámetro que hace referencia al identificador a comparar.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Lanzada cuando el valor del argumento <c>entityIdentifier</c> es null.
+            </exception>
+            <returns>
+            Devuelve un entero que indica si la comparación es correcta o no.
+            </returns>
+        </member>
+        <member name="M:i2.Framework.Domain.Model.Entity`2.CompareTo(i2.Framework.Domain.Model.Entity{`0,`1})">
+            <summary>
+            Define la función encargada de comparar u ordenar objetos.
+            </summary>
+            <remarks>
+            Compara el identificador de dos entidades base para saber si
+            son iguales o no.
+            </remarks>
+            <param name="entityIdentifier">Indica el otro objeto con el cual comparar.</param>
+            <returns>Devuelve un entero que indica si la comparación es correcta o no.</returns>
+        </member>
+        <member name="M:i2.Framework.Domain.Model.Entity`2.CompareTo(`0)">
+            <summary>
+            Define la función encargada de comparar u ordenar objetos.
+            </summary>
+            <remarks>
+            Compara el identificador de dos entidades base para saber si
+            son iguales o no.
+            </remarks>
+            <param name="entity">Indica el otro objeto con el cual comparar.</param>
+            <returns>Devuelve un entero que indica si la comparación es correcta o no.</returns>
+        </member>
+        <member name="M:i2.Framework.Domain.Model.Entity`2.IsTransient">
+            <summary>
+                Transient objects are not associated with an item already in storage.  For instance,
+                a Customer is transient if its Id is 0.  It's virtual to allow NHibernate-backed 
+                objects to be lazily loaded.
+            </summary>
+        </member>
+        <member name="M:i2.Framework.Domain.Model.Entity`2.Equals(`0)">
+            <summary>
+            Equalses the specified compare to.
+            </summary>
+            <param name="other">The compare to.</param>
+            <returns></returns>
+        </member>
+        <member name="M:i2.Framework.Domain.Model.Entity`2.Equals(i2.Framework.Domain.Contracts.IEntity{`1})">
+            <summary>
+            Equalses the specified compare to.
+            </summary>
+            <param name="other">The compare to.</param>
+            <returns></returns>
+        </member>
+        <member name="M:i2.Framework.Domain.Model.Entity`2.Equals(i2.Framework.Domain.Model.Entity{`0,`1})">
+            <summary>
+            Equalses the specified compare to.
+            </summary>
+            <param name="other">The compare to.</param>
+            <returns></returns>
+        </member>
+        <member name="M:i2.Framework.Domain.Model.Entity`2.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:System.Object"/> is equal to the current <see cref="T:System.Object"/>.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object"/> to compare with the current <see cref="T:System.Object"/>.</param>
+            <returns>
+            true if the specified <see cref="T:System.Object"/> is equal to the current <see cref="T:System.Object"/>; otherwise, false.
+            </returns>
+            <exception cref="T:System.NullReferenceException">
+            The <paramref name="obj"/> parameter is null.
+            </exception>
+        </member>
+        <member name="M:i2.Framework.Domain.Model.Entity`2.GetHashCode">
+            <summary>
+            This is used to provide the hashcode identifier of an object using the signature
+            properties of the object; although it's necessary for NHibernate's use, this can
+            also be useful for business logic purposes and has been included in this base
+            class, accordingly.  Since it is recommended that GetHashCode change infrequently,
+            if at all, in an object's lifetime, it's important that properties are carefully
+            selected which truly represent the signature of an object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:i2.Framework.Domain.Model.Entity`2.GetSignatureProperties">
+            <summary>
+            Init the signaturePropertiesDictionary here due to reasons described at 
+            http://blogs.msdn.com/jfoscoding/archive/2006/07/18/670497.aspx
+            </summary>
+        </member>
+        <member name="M:i2.Framework.Domain.Model.Entity`2.GetTypeUnproxied">
+            <summary>
+                When NHibernate proxies objects, it masks the type of the actual entity object.
+                This wrapper burrows into the proxied object to get its actual type.
+            
+                Although this assumes NHibernate is being used, it doesn't require any NHibernate
+                related dependencies and has no bad side effects if NHibernate isn't being used.
+            
+                Related discussion is at http://groups.google.com/group/sharp-architecture/browse_thread/thread/ddd05f9baede023a ...thanks Jay Oliver!
+            </summary>
+        </member>
+        <member name="M:i2.Framework.Domain.Model.Entity`2.HasSameNonDefaultIdAs(i2.Framework.Domain.Model.Entity{`0,`1})">
+            <summary>
+            derived from Hexacore
+            Returns true if self and the provided entity have the same Id values
+            and the Ids are not of the default Id value
+            </summary>
+        </member>
+        <member name="M:i2.Framework.Domain.Model.Entity`2.GetTypeSpecificSignatureProperties">
+            <summary>
+                The property getter for SignatureProperties should ONLY compare the properties which make up 
+                the "domain signature" of the object.
+            
+                If you choose NOT to override this method (which will be the most common scenario), 
+                then you should decorate the appropriate property(s) with [DomainSignature] and they 
+                will be compared automatically.  This is the preferred method of managing the domain
+                signature of entity objects.
+            </summary>
+            <remarks>
+                This ensures that the entity has at least one property decorated with the 
+                [DomainSignature] attribute.
+            </remarks>
+        </member>
+        <member name="T:i2.Framework.Domain.Model.DynamicExtensions.PrivateReflectionDynamicObject">
+            <summary>
+            http://blogs.msdn.com/b/davidebb/archive/2010/01/18/use-c-4-0-dynamic-to-drastically-simplify-your-private-reflection-code.aspx
+            </summary>
+        </member>
+        <member name="T:i2.Framework.Domain.Model.DynamicExtensions.PrivateReflectionDynamicObject.IProperty">
+            <summary>
+             Simple abstraction to make field and property access consistent
+            </summary>
+        </member>
+        <member name="P:i2.Framework.Domain.Model.DynamicExtensions.PrivateReflectionDynamicObject.IProperty.Name">
+            <summary>
+            property name
+            </summary>
+        </member>
+        <member name="P:i2.Framework.Domain.Model.DynamicExtensions.PrivateReflectionDynamicObject.RealObject">
+            <summary>
+            real object to wrap
+            </summary>
+        </member>
+        <member name="T:i2.Framework.Domain.Model.DynamicExtensions.PrivateReflectionDynamicObjectExtensions">
+            <summary>
+            .es extension de reflexion para objetos dinámicos 
+            .en reflexion extension to dinamic objects
+            </summary>
+        </member>
+        <member name="M:i2.Framework.Domain.Model.DynamicExtensions.PrivateReflectionDynamicObjectExtensions.AsDynamic(System.Object)">
+            <summary>
+            TODO: update comments
+            </summary>
+            <param name="o"></param>
+            <returns></returns>
+        </member>
+        <member name="T:i2.Framework.Domain.Contracts.DomainSignatureAttribute">
+            <summary>
+                Facilitates indicating which property(s) describe the unique signature of an 
+                entity.  See Entity.GetTypeSpecificSignatureProperties() for when this is leveraged.
+            </summary>
+            <remarks>
+                This is intended for use with <see cref="T:i2.Framework.Domain.Contracts.IEntity`1" />.  It may NOT be used on a <see cref="!:ValueObject" />.
+            </remarks>
+        </member>
+        <member name="T:i2.Framework.Domain.Contracts.Event">
+            <summary>
+             poc for CQRS implementation 
+            </summary>
+        </member>
+        <member name="P:i2.Framework.Domain.Contracts.Event.Version">
+            <summary>
+            event version
+            </summary>
+        </member>
+        <member name="T:i2.Framework.Domain.Contracts.EventSourcedEntity">
+            <summary>
+            event source entity to save historic changes
+            </summary>
+        </member>
+        <member name="P:i2.Framework.Domain.Contracts.EventSourcedEntity.Id">
+            <summary>
+            entity identifier
+            </summary>
+        </member>
+        <member name="P:i2.Framework.Domain.Contracts.EventSourcedEntity.Version">
+            <summary>
+            TODO: update comments
+            </summary>
+        </member>
+        <member name="M:i2.Framework.Domain.Contracts.EventSourcedEntity.GetUncommittedChanges">
+            <summary>
+            TODO: update comments
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:i2.Framework.Domain.Contracts.EventSourcedEntity.LoadsFromHistory(System.Collections.Generic.IEnumerable{i2.Framework.Domain.Contracts.Event})">
+            <summary>
+            TODO: update comments
+            </summary>
+            <param name="history"></param>
+        </member>
+        <member name="M:i2.Framework.Domain.Contracts.EventSourcedEntity.MarkChangesAsCommitted">
+            <summary>
+            TODO: update comments
+            </summary>
+        </member>
+        <member name="M:i2.Framework.Domain.Contracts.EventSourcedEntity.ApplyChange(i2.Framework.Domain.Contracts.Event)">
+            <summary>
+            TODO: update comments
+            </summary>
+            <param name="event"></param>
+        </member>
+    </members>
+</doc>

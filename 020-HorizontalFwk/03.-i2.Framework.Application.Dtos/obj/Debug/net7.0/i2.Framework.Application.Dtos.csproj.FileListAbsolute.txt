@@ -1,0 +1,13 @@
+D:\git\i2\000-Assemblies\Debug\net7.0\i2.Framework.Application.Dtos.deps.json
+D:\git\i2\000-Assemblies\Debug\net7.0\i2.Framework.Application.Dtos.dll
+D:\git\i2\000-Assemblies\Debug\net7.0\i2.Framework.Application.Dtos.pdb
+D:\git\i2\000-Assemblies\Debug\net7.0\Inflexion2.XML
+D:\git\i2\020-HorizontalFwk\03.-i2.Framework.Application.Dtos\obj\Debug\net7.0\i2.Framework.Application.Dtos.csproj.AssemblyReference.cache
+D:\git\i2\020-HorizontalFwk\03.-i2.Framework.Application.Dtos\obj\Debug\net7.0\i2.Framework.Application.Dtos.GeneratedMSBuildEditorConfig.editorconfig
+D:\git\i2\020-HorizontalFwk\03.-i2.Framework.Application.Dtos\obj\Debug\net7.0\i2.Framework.Application.Dtos.AssemblyInfoInputs.cache
+D:\git\i2\020-HorizontalFwk\03.-i2.Framework.Application.Dtos\obj\Debug\net7.0\i2.Framework.Application.Dtos.AssemblyInfo.cs
+D:\git\i2\020-HorizontalFwk\03.-i2.Framework.Application.Dtos\obj\Debug\net7.0\i2.Framework.Application.Dtos.csproj.CoreCompileInputs.cache
+D:\git\i2\020-HorizontalFwk\03.-i2.Framework.Application.Dtos\obj\Debug\net7.0\i2.Framework.Application.Dtos.dll
+D:\git\i2\020-HorizontalFwk\03.-i2.Framework.Application.Dtos\obj\Debug\net7.0\refint\i2.Framework.Application.Dtos.dll
+D:\git\i2\020-HorizontalFwk\03.-i2.Framework.Application.Dtos\obj\Debug\net7.0\i2.Framework.Application.Dtos.pdb
+D:\git\i2\020-HorizontalFwk\03.-i2.Framework.Application.Dtos\obj\Debug\net7.0\ref\i2.Framework.Application.Dtos.dll

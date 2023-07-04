@@ -1,0 +1,58 @@
+/* 
+ * Copyright [2023] [Javier Hermoso Blanco]
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+namespace i2.Framework.Domain.Contracts
+{
+    /// <summary>
+    /// DbC Design by Contracts (Bertrand Meyer)
+    /// Interface for validatable objects.
+    /// </summary>
+    public interface IValidatable
+    {
+        /// <summary>
+        /// Validates this instance.
+        /// If instance is not valid, method must throw a ValidationException.
+        /// </summary>
+        void AssertValidation();
+
+        /// <summary>
+        /// Determines whether this instance is valid.
+        /// </summary>
+        /// <returns>
+        /// <c>true</c> if this instance is valid; otherwise, <c>false</c>.
+        /// </returns>
+        bool IsValid();
+
+        /// <summary>
+        /// Validates this instance.
+        /// If instance is not valid, a collection of errors will be returned.
+        /// </summary>
+        /// <returns>A list containing error details, or null</returns>
+        IValidationResult Validate();
+    }
+
+    /// <summary>
+    /// Interface for validatable objects.
+    /// </summary>
+    public interface IValidatable<T> : IValidatable
+    {
+        /// <summary>
+        /// Validates an entitty using the specified validator.
+        /// </summary>
+        /// <param name="validator">The validator.</param>
+        /// <returns></returns>
+        IValidationResult Validate(IValidator<T> validator);
+    }
+}

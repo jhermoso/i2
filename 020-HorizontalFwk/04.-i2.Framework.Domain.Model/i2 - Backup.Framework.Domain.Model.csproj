@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <Compile Remove="Extensions\ActionExtensions.cs" />
+    <Compile Remove="Extensions\CollectionExtensions.cs" />
+    <Compile Remove="Extensions\DateTimeExtension.cs" />
+    <Compile Remove="Extensions\EnumerableExtensions.cs" />
+    <Compile Remove="Extensions\EnumExtension.cs" />
+    <Compile Remove="Extensions\GuidExtensions.cs" />
+    <Compile Remove="Extensions\JSONExtensions.cs" />
+    <Compile Remove="Extensions\ObjectExtension.cs" />
+    <Compile Remove="Extensions\ObjectExtensions.cs" />
+    <Compile Remove="Extensions\PagingExtensions.cs" />
+    <Compile Remove="Extensions\PropertyExtension.cs" />
+    <Compile Remove="Extensions\ReflectionExtensions.cs" />
+    <Compile Remove="Extensions\SpecificationDtoExtensions.cs" />
+    <Compile Remove="Extensions\SpecificationsLinqExtensions.cs" />
+    <Compile Remove="Extensions\StringExtensions.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\04.-i2.Framework.Domain.Contracts\i2.Framework.Domain.Contracts.csproj" />
+    <ProjectReference Include="..\04.-i2.Framework.Domain.Data\i2.Framework.Domain.Data.csproj" />
+    <ProjectReference Include="..\05.-i2.Framework.Infrastructure.Contracts\i2.Framework.Infrastructure.Contracts.csproj" />
+    <ProjectReference Include="..\05.-i2.Framework.Infrastructure.Resources\i2.Framework.Infrastructure.Resources.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+    <Folder Include="DbC\" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>$(MSBuildProjectName)</AssemblyName>
+    <PackageOutputPath>..\..\Build\$(OutputPath)</PackageOutputPath>
+    <NeutralLanguage>en</NeutralLanguage>
+  </PropertyGroup>
+
+</Project>

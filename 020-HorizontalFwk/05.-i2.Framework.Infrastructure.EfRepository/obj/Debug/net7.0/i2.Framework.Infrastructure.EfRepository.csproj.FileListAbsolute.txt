@@ -1,0 +1,14 @@
+D:\git\i2\000-Assemblies\Debug\net7.0\i2.Framework.Infrastructure.EfRepository.deps.json
+D:\git\i2\000-Assemblies\Debug\net7.0\i2.Framework.Infrastructure.EfRepository.dll
+D:\git\i2\000-Assemblies\Debug\net7.0\i2.Framework.Infrastructure.EfRepository.pdb
+D:\git\i2\000-Assemblies\Debug\net7.0\Inflexion2.XML
+D:\git\i2\020-HorizontalFwk\05.-i2.Framework.Infrastructure.EfRepository\obj\Debug\net7.0\i2.Framework.Infrastructure.EfRepository.csproj.AssemblyReference.cache
+D:\git\i2\020-HorizontalFwk\05.-i2.Framework.Infrastructure.EfRepository\obj\Debug\net7.0\i2.Framework.Infrastructure.EfRepository.GeneratedMSBuildEditorConfig.editorconfig
+D:\git\i2\020-HorizontalFwk\05.-i2.Framework.Infrastructure.EfRepository\obj\Debug\net7.0\i2.Framework.Infrastructure.EfRepository.AssemblyInfoInputs.cache
+D:\git\i2\020-HorizontalFwk\05.-i2.Framework.Infrastructure.EfRepository\obj\Debug\net7.0\i2.Framework.Infrastructure.EfRepository.AssemblyInfo.cs
+D:\git\i2\020-HorizontalFwk\05.-i2.Framework.Infrastructure.EfRepository\obj\Debug\net7.0\i2.Framework.Infrastructure.EfRepository.csproj.CoreCompileInputs.cache
+D:\git\i2\020-HorizontalFwk\05.-i2.Framework.Infrastructure.EfRepository\obj\Debug\net7.0\i2.Framework.Infrastructure.EfRepository.csproj.CopyComplete
+D:\git\i2\020-HorizontalFwk\05.-i2.Framework.Infrastructure.EfRepository\obj\Debug\net7.0\i2.Framework.Infrastructure.EfRepository.dll
+D:\git\i2\020-HorizontalFwk\05.-i2.Framework.Infrastructure.EfRepository\obj\Debug\net7.0\refint\i2.Framework.Infrastructure.EfRepository.dll
+D:\git\i2\020-HorizontalFwk\05.-i2.Framework.Infrastructure.EfRepository\obj\Debug\net7.0\i2.Framework.Infrastructure.EfRepository.pdb
+D:\git\i2\020-HorizontalFwk\05.-i2.Framework.Infrastructure.EfRepository\obj\Debug\net7.0\ref\i2.Framework.Infrastructure.EfRepository.dll
